@@ -17,7 +17,9 @@
 
 ### 🧱 What I do
 
-I'm the Manager of BI & Analytics at **Exchange Solutions** in Toronto, where I lead the team that turns raw transactional data into the dashboards and cubes powering promotional analytics for retail loyalty programs. Snowflake is my warehouse, Tableau is my canvas, and SQL is the language I think in when I'm solving a business question.
+I started as a software engineer in India after studying Computer Science at **Jawaharlal Nehru Technological University**, and over the past **19 years** I've worked my way through five countries and a career arc that took me from writing code to leading the teams that turn data into decisions. That journey has gone through Hyderabad, Atlanta, New York, London, Kuwait City, and now Toronto, across industries from energy and capital banking to consumer retail, micro-finance, and loyalty analytics.
+
+Today I'm the **Manager of BI & Analytics** at **Exchange Solutions** in Toronto, where I lead the team that builds the dashboards, cubes, and analytical data products powering promotional analytics for retail loyalty programs. Snowflake is my warehouse, Tableau is my canvas, and SQL is the language I think in when I'm solving a business question. I've also built an **end-to-end AI-assisted BI delivery pipeline** using Claude, spanning everything from discovery and requirements through architecture, development, validation, and knowledge transfer.
 
 But the thing I love most about this work isn't any single tool. It's the moment when a stakeholder looks at a dashboard and says, *"Oh, now I see it."* That's the puzzle I keep coming back to: how do you take something complex and make it genuinely clear?
 
@@ -48,12 +50,14 @@ When the workday wraps, I don't stop building. I've shipped **four live web prod
 </p>
 
 ```
-Analytics    →  Snowflake · Tableau · SQL · Python · dbt
+Analytics    →  Snowflake · Tableau · Power BI · QuickSight · SQL · Python · dbt
 Cloud        →  Cloudflare (Workers · Pages · D1 · R2 · Cron Triggers)
-                AWS (Solutions Architect certified)
+                AWS (Solutions Architect certified) · Azure
+Data         →  Matillion · Talend · Informatica · PostgreSQL · Redshift
 Web          →  TypeScript · HTML/CSS · Eleventy · Next.js
 Payments     →  Stripe (Checkout · Webhooks · Coupons · Tax)
-AI / Tools   →  Claude Code · D3.js · Pagefind · PIL
+AI / Agentic →  Claude Code · OpenAI · End-to-End AI-Assisted BI Pipelines
+Viz / Tools  →  D3.js · Pagefind · PIL
 Ops          →  Git · GitHub Actions · Wrangler · CI/CD
 ```
 
@@ -72,8 +76,11 @@ Ops          →  Git · GitHub Actions · Wrangler · CI/CD
 
 ### 📜 Certifications
 
-![AWS](https://img.shields.io/badge/AWS-Solutions%20Architect-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-Certified-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![AWS SA](https://img.shields.io/badge/AWS-Solutions%20Architect-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![AWS CP](https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![Tableau Author](https://img.shields.io/badge/Tableau-Author-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![Tableau Consumer](https://img.shields.io/badge/Tableau-Consumer-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![Tableau Server Admin](https://img.shields.io/badge/Tableau-Server%20Admin-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 
 ---
 
