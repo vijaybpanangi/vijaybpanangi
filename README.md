@@ -9,6 +9,7 @@
   <a href="https://awonderfullife.ca"><img alt="Blog" src="https://img.shields.io/badge/Blog-awonderfullife.ca-1a1a2e?style=for-the-badge&logo=cloudflare&logoColor=white"/></a>
   <a href="https://www.linkedin.com/in/vijaybhushan/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://twitter.com/psvijaybhushan"><img alt="X" src="https://img.shields.io/badge/X-@psvijaybhushan-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
+  <a href="https://trackyourapp.ca"><img alt="Track Your App" src="https://img.shields.io/badge/Track_Your_App-trackyourapp.ca-16a34a?style=for-the-badge&logo=vercel&logoColor=white"/></a>
   <a href="mailto:vijaybpanangi@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-Say%20Hello-ea4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 </p>
 
