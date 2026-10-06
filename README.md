@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Vijay 👋</h1>
 
 <p align="center">
-  <strong>BI & Analytics Engineer · Full-Stack Builder · Toronto, ON 🇨🇦</strong><br/>
+  <strong>Manager, BI & Analytics · Full-Stack Builder · Toronto, ON 🇨🇦</strong><br/>
   Snowflake · Tableau · Cloudflare Workers · TypeScript
 </p>
 
@@ -17,7 +17,7 @@
 
 ### 🧱 What I do
 
-I'm a BI and Analytics Engineer at **Exchange Solutions** in Toronto, where I turn raw transactional data into the dashboards and cubes that power promotional analytics for retail loyalty programs. Snowflake is my warehouse, Tableau is my canvas, and SQL is the language I think in when I'm solving a business question.
+I'm the Manager of BI & Analytics at **Exchange Solutions** in Toronto, where I lead the team that turns raw transactional data into the dashboards and cubes powering promotional analytics for retail loyalty programs. Snowflake is my warehouse, Tableau is my canvas, and SQL is the language I think in when I'm solving a business question.
 
 But the thing I love most about this work isn't any single tool. It's the moment when a stakeholder looks at a dashboard and says, *"Oh, now I see it."* That's the puzzle I keep coming back to: how do you take something complex and make it genuinely clear?
 
