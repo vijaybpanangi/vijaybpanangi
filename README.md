@@ -161,7 +161,7 @@ Ops          →  Git · GitHub Actions · Wrangler · CI/CD
 ### 📈 GitHub stats
 
 <p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=vijaybpanangi&show_icons=true&theme=default&hide_border=true&bg_color=ffffff&title_color=1a1a2e&icon_color=0969da&text_color=333333&rank_icon=github"/>
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=vijaybpanangi&show_icons=true&count_private=true&include_all_commits=true&theme=default&hide_border=true&bg_color=ffffff&title_color=1a1a2e&icon_color=0969da&text_color=333333&rank_icon=github"/>
   &nbsp;&nbsp;&nbsp;
   <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vijaybpanangi&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=1a1a2e&text_color=333333&langs_count=8"/>
 </p>
