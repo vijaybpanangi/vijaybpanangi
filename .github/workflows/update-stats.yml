@@ -1,0 +1,71 @@
+name: Update Profile Stats
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Query GitHub stats
+        id: stats
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          RESPONSE=$(gh api graphql -f query='{
+            user(login: "vijaybpanangi") {
+              repositories(first: 100, ownerAffiliations: OWNER) {
+                totalCount
+                nodes {
+                  defaultBranchRef {
+                    target {
+                      ... on Commit { history { totalCount } }
+                    }
+                  }
+                  pullRequests(states: [OPEN, CLOSED, MERGED]) { totalCount }
+                }
+              }
+            }
+          }')
+
+          COMMITS=$(echo "$RESPONSE" | jq '[.data.user.repositories.nodes[].defaultBranchRef.target.history.totalCount // 0] | add')
+          PRS=$(echo "$RESPONSE" | jq '[.data.user.repositories.nodes[].pullRequests.totalCount] | add')
+          REPOS=$(echo "$RESPONSE" | jq '.data.user.repositories.totalCount')
+
+          # Format with commas (locale-safe)
+          fmt() { echo "$1" | sed -e :a -e 's/\(.*[0-9]\)\([0-9]\{3\}\)/\1,\2/;ta'; }
+
+          COMMITS_FMT=$(fmt "$COMMITS")
+          PRS_FMT=$(fmt "$PRS")
+
+          echo "commits=$COMMITS_FMT" >> "$GITHUB_OUTPUT"
+          echo "prs=$PRS_FMT" >> "$GITHUB_OUTPUT"
+          echo "repos=$REPOS" >> "$GITHUB_OUTPUT"
+          echo "Commits: $COMMITS_FMT | PRs: $PRS_FMT | Repos: $REPOS"
+
+      - name: Update README badges
+        run: |
+          COMMITS="${{ steps.stats.outputs.commits }}"
+          PRS="${{ steps.stats.outputs.prs }}"
+          REPOS="${{ steps.stats.outputs.repos }}"
+
+          sed -i "s|Commits-[0-9,]*+-|Commits-${COMMITS}+-|" README.md
+          sed -i "s|Pull_Requests-[0-9,]*+-|Pull_Requests-${PRS}+-|" README.md
+          sed -i "s|Repositories-[0-9]*-16a34a|Repositories-${REPOS}-16a34a|" README.md
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || {
+            git add README.md
+            git commit -m "stats: $(date -u +%Y-%m-%d) | update commit, PR and repo counts"
+            git push
+          }
